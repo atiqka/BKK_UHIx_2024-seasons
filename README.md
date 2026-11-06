@@ -5,6 +5,9 @@ Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
 ---
 
+Output UHIx seasonal maps of BMA can be found here. https://atiq-project-july2025.projects.earthengine.app/view/bmaheat2024
+
+---
 
 ## Introduction
 
@@ -31,15 +34,11 @@ By producing consistent seasonal UHIx maps at 30 m resolution, this work support
 
 The relative humidity component is estimated from NDVI as a simple proxy, a practical approach when direct atmospheric humidity measurements at the required spatial and temporal resolution are unavailable.
 
----
+The js script developed calculates a Heat Index (°C) for each Landsat 9 scene using:
 
-## Overview
-
-The script calculates a Heat Index (°C) for each Landsat 9 scene using:
-
-1. **Land Surface Temperature (LST)** derived from the `ST_B10` band  
-2. **NDVI** (as a proxy for relative humidity)  
-3. The standard Rothfusz regression equation for Heat Index
+  1. **Land Surface Temperature (LST)** derived from the `ST_B10` band  
+  2. **NDVI** (as a proxy for relative humidity)  
+  3. The standard Rothfusz regression equation for Heat Index
 
 Seasonal mean composites are then generated, visualized, and exported to Google Drive.
 
@@ -124,7 +123,6 @@ The maps use a sequential palette from dark purple (cooler) to dark red (hotter)
 - Results should be interpreted as relative spatial patterns of heat stress rather than absolute meteorological Heat Index values.
 
 ---
-
 
 
 ## License
