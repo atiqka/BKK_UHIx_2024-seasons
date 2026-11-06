@@ -1,4 +1,5 @@
-# Bangkok UHIx Seasonal Mapping (2024)
+# Bangkok Metropolitan Area (BMA) Urban Heat Index (UHIx) for Seasons in 2024
+
 
 Author: Atiq Kainan Ahmed. Email: atiqka@yahoo.com
 
@@ -87,27 +88,6 @@ HI = −8.784695 + 1.61139411·T + 2.338549·RH − 0.14611605·T·RH
      + 0.00072546·T·RH² − 0.000003582·T²·RH²
 ```
 
----
-
-## How to Run
-
-### Prerequisites
-
-- A Google Earth Engine account ([sign up here](https://earthengine.google.com/signup/))
-- Access to the asset:  
-  `projects/atiq-project-july2025/assets/BMA_districts`  
-  *(or replace with your own BMA boundary asset)*
-
-### Steps
-
-1. Open the [Google Earth Engine Code Editor](https://code.earthengine.google.com/)
-2. Create a new script and paste the contents of `bangkok_uhix_seasonal.js`
-3. Make sure you have permission to read the BMA asset (or update the path)
-4. Click **Run**
-5. Three seasonal layers will appear on the map
-6. Go to the **Tasks** tab and start the three export tasks
-
-Exports are saved to your Google Drive under the folder `EarthEngineExports`.
 
 ---
 
@@ -146,6 +126,15 @@ The maps use a sequential palette from dark purple (cooler) to dark red (hotter)
 ---
 
 
+
 ## License
 
-This project is released under the MIT License. See `LICENSE` for details.
+MIT License
+
+Copyright (c) 2025 Atiq Kainan Ahmed.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
